@@ -126,19 +126,85 @@
           }
         },
         "appium-android-driver": {
-          "version": "1.10.38",
-          "from": "appium-android-driver@>=1.0.0 <2.0.0",
-          "resolved": "https://registry.npmjs.org/appium-android-driver/-/appium-android-driver-1.10.38.tgz",
+          "version": "1.17.1-crosswalk-fix",
+          "from": "https://github.com/blutter/appium-android-driver/releases/download/v1.17.1-crosswalk-fix/appium-android-driver-1.17.1-crosswalk-fix.tgz",
+          "resolved": "https://github.com/blutter/appium-android-driver/releases/download/v1.17.1-crosswalk-fix/appium-android-driver-1.17.1-crosswalk-fix.tgz",
           "dependencies": {
+            "appium-adb": {
+              "version": "2.16.0",
+              "from": "appium-adb@>=2.16.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/appium-adb/-/appium-adb-2.16.0.tgz",
+              "dependencies": {
+                "source-map-support": {
+                  "version": "0.4.14",
+                  "from": "source-map-support@>=0.4.8 <0.5.0",
+                  "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.14.tgz"
+                }
+              }
+            },
+            "appium-support": {
+              "version": "2.7.0",
+              "from": "appium-support@>=2.4.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/appium-support/-/appium-support-2.7.0.tgz",
+              "dependencies": {
+                "bluebird": {
+                  "version": "2.11.0",
+                  "from": "bluebird@>=2.9.25 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-2.11.0.tgz"
+                },
+                "lodash": {
+                  "version": "4.17.4",
+                  "from": "lodash@>=4.2.1 <5.0.0",
+                  "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
+                },
+                "source-map-support": {
+                  "version": "0.4.14",
+                  "from": "source-map-support@>=0.4.6 <0.5.0",
+                  "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.14.tgz"
+                }
+              }
+            },
+            "bluebird": {
+              "version": "3.5.0",
+              "from": "bluebird@>=3.4.7 <4.0.0",
+              "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz"
+            },
+            "camelcase": {
+              "version": "3.0.0",
+              "from": "camelcase@>=3.0.0 <4.0.0",
+              "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-3.0.0.tgz"
+            },
+            "io.appium.settings": {
+              "version": "2.2.1",
+              "from": "io.appium.settings@>=2.2.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/io.appium.settings/-/io.appium.settings-2.2.1.tgz"
+            },
             "lodash": {
               "version": "3.10.1",
               "from": "lodash@>=3.10.0 <4.0.0",
               "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
             },
+            "source-map": {
+              "version": "0.5.6",
+              "from": "source-map@>=0.5.6 <0.6.0",
+              "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz"
+            },
             "source-map-support": {
               "version": "0.3.3",
               "from": "source-map-support@>=0.3.1 <0.4.0",
-              "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.3.3.tgz"
+              "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.3.3.tgz",
+              "dependencies": {
+                "source-map": {
+                  "version": "0.1.32",
+                  "from": "source-map@0.1.32",
+                  "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.32.tgz"
+                }
+              }
+            },
+            "yargs": {
+              "version": "6.6.0",
+              "from": "yargs@>=6.6.0 <7.0.0",
+              "resolved": "https://registry.npmjs.org/yargs/-/yargs-6.6.0.tgz"
             }
           }
         },
@@ -317,10 +383,76 @@
           "from": "appium-selendroid-driver@>=1.0.0 <2.0.0",
           "resolved": "https://registry.npmjs.org/appium-selendroid-driver/-/appium-selendroid-driver-1.4.3.tgz",
           "dependencies": {
+            "appium-android-driver": {
+              "version": "1.17.1",
+              "from": "appium-android-driver@>=1.10.16 <2.0.0",
+              "resolved": "https://registry.npmjs.org/appium-android-driver/-/appium-android-driver-1.17.1.tgz",
+              "dependencies": {
+                "appium-adb": {
+                  "version": "2.16.0",
+                  "from": "appium-adb@^2.16.0",
+                  "resolved": "https://registry.npmjs.org/appium-adb/-/appium-adb-2.16.0.tgz",
+                  "dependencies": {
+                    "source-map-support": {
+                      "version": "0.4.14",
+                      "from": "source-map-support@>=0.4.8 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.14.tgz"
+                    }
+                  }
+                },
+                "appium-support": {
+                  "version": "2.7.0",
+                  "from": "appium-support@^2.4.0",
+                  "resolved": "https://registry.npmjs.org/appium-support/-/appium-support-2.7.0.tgz",
+                  "dependencies": {
+                    "bluebird": {
+                      "version": "2.11.0",
+                      "from": "bluebird@>=2.9.25 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-2.11.0.tgz"
+                    },
+                    "lodash": {
+                      "version": "4.17.4",
+                      "from": "lodash@>=4.2.1 <5.0.0",
+                      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
+                    },
+                    "source-map-support": {
+                      "version": "0.4.14",
+                      "from": "source-map-support@>=0.4.6 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.14.tgz"
+                    }
+                  }
+                },
+                "bluebird": {
+                  "version": "3.5.0",
+                  "from": "bluebird@^3.4.7",
+                  "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz"
+                },
+                "source-map": {
+                  "version": "0.5.6",
+                  "from": "source-map@^0.5.6",
+                  "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz"
+                },
+                "yargs": {
+                  "version": "6.6.0",
+                  "from": "yargs@^6.6.0",
+                  "resolved": "https://registry.npmjs.org/yargs/-/yargs-6.6.0.tgz"
+                }
+              }
+            },
             "bluebird": {
               "version": "3.4.6",
               "from": "bluebird@>=3.4.1 <4.0.0",
               "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.4.6.tgz"
+            },
+            "camelcase": {
+              "version": "3.0.0",
+              "from": "camelcase@^3.0.0",
+              "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-3.0.0.tgz"
+            },
+            "io.appium.settings": {
+              "version": "2.2.1",
+              "from": "io.appium.settings@^2.2.0",
+              "resolved": "https://registry.npmjs.org/io.appium.settings/-/io.appium.settings-2.2.1.tgz"
             },
             "lodash": {
               "version": "3.10.1",
@@ -373,6 +505,72 @@
           "from": "appium-uiautomator2-driver@>=0.0.0 <1.0.0",
           "resolved": "https://registry.npmjs.org/appium-uiautomator2-driver/-/appium-uiautomator2-driver-0.2.3.tgz",
           "dependencies": {
+            "appium-android-driver": {
+              "version": "1.17.1",
+              "from": "appium-android-driver@^1.10.27",
+              "resolved": "https://registry.npmjs.org/appium-android-driver/-/appium-android-driver-1.17.1.tgz",
+              "dependencies": {
+                "appium-adb": {
+                  "version": "2.16.0",
+                  "from": "appium-adb@^2.16.0",
+                  "resolved": "https://registry.npmjs.org/appium-adb/-/appium-adb-2.16.0.tgz",
+                  "dependencies": {
+                    "source-map-support": {
+                      "version": "0.4.14",
+                      "from": "source-map-support@>=0.4.8 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.14.tgz"
+                    }
+                  }
+                },
+                "appium-support": {
+                  "version": "2.7.0",
+                  "from": "appium-support@^2.4.0",
+                  "resolved": "https://registry.npmjs.org/appium-support/-/appium-support-2.7.0.tgz",
+                  "dependencies": {
+                    "bluebird": {
+                      "version": "2.11.0",
+                      "from": "bluebird@>=2.9.25 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-2.11.0.tgz"
+                    },
+                    "lodash": {
+                      "version": "4.17.4",
+                      "from": "lodash@>=4.2.1 <5.0.0",
+                      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
+                    },
+                    "source-map-support": {
+                      "version": "0.4.14",
+                      "from": "source-map-support@>=0.4.6 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.4.14.tgz"
+                    }
+                  }
+                },
+                "bluebird": {
+                  "version": "3.5.0",
+                  "from": "bluebird@^3.4.7",
+                  "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz"
+                },
+                "source-map": {
+                  "version": "0.5.6",
+                  "from": "source-map@^0.5.6",
+                  "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz"
+                },
+                "yargs": {
+                  "version": "6.6.0",
+                  "from": "yargs@^6.6.0",
+                  "resolved": "https://registry.npmjs.org/yargs/-/yargs-6.6.0.tgz"
+                }
+              }
+            },
+            "camelcase": {
+              "version": "3.0.0",
+              "from": "camelcase@^3.0.0",
+              "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-3.0.0.tgz"
+            },
+            "io.appium.settings": {
+              "version": "2.2.1",
+              "from": "io.appium.settings@^2.2.0",
+              "resolved": "https://registry.npmjs.org/io.appium.settings/-/io.appium.settings-2.2.1.tgz"
+            },
             "lodash": {
               "version": "3.10.1",
               "from": "lodash@>=3.10.1 <4.0.0",
@@ -813,6 +1011,11 @@
           "from": "bufferpack@0.0.6",
           "resolved": "https://registry.npmjs.org/bufferpack/-/bufferpack-0.0.6.tgz"
         },
+        "builtin-modules": {
+          "version": "1.1.1",
+          "from": "builtin-modules@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/builtin-modules/-/builtin-modules-1.1.1.tgz"
+        },
         "bytes": {
           "version": "2.4.0",
           "from": "bytes@2.4.0",
@@ -1113,6 +1316,11 @@
           "from": "encodeurl@>=1.0.1 <1.1.0",
           "resolved": "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.1.tgz"
         },
+        "error-ex": {
+          "version": "1.3.1",
+          "from": "error-ex@>=1.2.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/error-ex/-/error-ex-1.3.1.tgz"
+        },
         "es6-error": {
           "version": "2.1.1",
           "from": "es6-error@>=2.0.2 <3.0.0",
@@ -1188,6 +1396,18 @@
           "from": "finalhandler@0.5.0",
           "resolved": "https://registry.npmjs.org/finalhandler/-/finalhandler-0.5.0.tgz"
         },
+        "find-up": {
+          "version": "1.1.2",
+          "from": "find-up@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/find-up/-/find-up-1.1.2.tgz",
+          "dependencies": {
+            "path-exists": {
+              "version": "2.1.0",
+              "from": "path-exists@>=2.0.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-2.1.0.tgz"
+            }
+          }
+        },
         "for-each": {
           "version": "0.3.2",
           "from": "for-each@>=0.3.2 <0.4.0",
@@ -1237,6 +1457,11 @@
           "version": "1.2.0",
           "from": "generate-object-property@>=1.1.0 <2.0.0",
           "resolved": "https://registry.npmjs.org/generate-object-property/-/generate-object-property-1.2.0.tgz"
+        },
+        "get-caller-file": {
+          "version": "1.0.2",
+          "from": "get-caller-file@>=1.0.1 <2.0.0",
+          "resolved": "https://registry.npmjs.org/get-caller-file/-/get-caller-file-1.0.2.tgz"
         },
         "get-stdin": {
           "version": "4.0.1",
@@ -1310,6 +1535,11 @@
           "from": "home-or-tmp@>=1.0.0 <2.0.0",
           "resolved": "https://registry.npmjs.org/home-or-tmp/-/home-or-tmp-1.0.0.tgz"
         },
+        "hosted-git-info": {
+          "version": "2.4.1",
+          "from": "hosted-git-info@>=2.1.4 <3.0.0",
+          "resolved": "https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.4.1.tgz"
+        },
         "http-errors": {
           "version": "1.5.1",
           "from": "http-errors@>=1.5.0 <1.6.0",
@@ -1372,6 +1602,11 @@
           "from": "ipaddr.js@1.1.1",
           "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.1.1.tgz"
         },
+        "is-arrayish": {
+          "version": "0.2.1",
+          "from": "is-arrayish@>=0.2.1 <0.3.0",
+          "resolved": "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz"
+        },
         "is-bluebird": {
           "version": "1.0.2",
           "from": "is-bluebird@>=1.0.1 <2.0.0",
@@ -1381,6 +1616,11 @@
           "version": "1.1.4",
           "from": "is-buffer@>=1.0.2 <2.0.0",
           "resolved": "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.4.tgz"
+        },
+        "is-builtin-module": {
+          "version": "1.0.0",
+          "from": "is-builtin-module@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/is-builtin-module/-/is-builtin-module-1.0.0.tgz"
         },
         "is-finite": {
           "version": "1.0.2",
@@ -1421,6 +1661,11 @@
           "version": "1.0.0",
           "from": "is-typedarray@>=1.0.0 <1.1.0",
           "resolved": "https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz"
+        },
+        "is-utf8": {
+          "version": "0.2.1",
+          "from": "is-utf8@>=0.2.0 <0.3.0",
+          "resolved": "https://registry.npmjs.org/is-utf8/-/is-utf8-0.2.1.tgz"
         },
         "isarray": {
           "version": "1.0.0",
@@ -1538,6 +1783,11 @@
           "version": "1.2.4",
           "from": "load-bmfont@>=1.2.3 <2.0.0",
           "resolved": "https://registry.npmjs.org/load-bmfont/-/load-bmfont-1.2.4.tgz"
+        },
+        "load-json-file": {
+          "version": "1.1.0",
+          "from": "load-json-file@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/load-json-file/-/load-json-file-1.1.0.tgz"
         },
         "lodash": {
           "version": "4.17.2",
@@ -1693,6 +1943,11 @@
           "from": "node-simctl@>=3.4.3 <4.0.0",
           "resolved": "https://registry.npmjs.org/node-simctl/-/node-simctl-3.4.4.tgz"
         },
+        "normalize-package-data": {
+          "version": "2.3.6",
+          "from": "normalize-package-data@>=2.3.2 <3.0.0",
+          "resolved": "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.3.6.tgz"
+        },
         "npmlog": {
           "version": "2.0.4",
           "from": "npmlog@>=2.0.0 <3.0.0",
@@ -1773,6 +2028,11 @@
           "from": "parse-headers@>=2.0.0 <3.0.0",
           "resolved": "https://registry.npmjs.org/parse-headers/-/parse-headers-2.0.1.tgz"
         },
+        "parse-json": {
+          "version": "2.2.0",
+          "from": "parse-json@>=2.2.0 <3.0.0",
+          "resolved": "https://registry.npmjs.org/parse-json/-/parse-json-2.2.0.tgz"
+        },
         "parseurl": {
           "version": "1.3.1",
           "from": "parseurl@>=1.3.1 <1.4.0",
@@ -1804,6 +2064,16 @@
           "version": "0.1.7",
           "from": "path-to-regexp@0.1.7",
           "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz"
+        },
+        "path-type": {
+          "version": "1.1.0",
+          "from": "path-type@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/path-type/-/path-type-1.1.0.tgz"
+        },
+        "pify": {
+          "version": "2.3.0",
+          "from": "pify@>=2.0.0 <3.0.0",
+          "resolved": "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz"
         },
         "pinkie": {
           "version": "2.0.4",
@@ -1894,6 +2164,16 @@
           "version": "1.0.1",
           "from": "read-chunk@>=1.0.1 <2.0.0",
           "resolved": "https://registry.npmjs.org/read-chunk/-/read-chunk-1.0.1.tgz"
+        },
+        "read-pkg": {
+          "version": "1.1.0",
+          "from": "read-pkg@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/read-pkg/-/read-pkg-1.1.0.tgz"
+        },
+        "read-pkg-up": {
+          "version": "1.0.1",
+          "from": "read-pkg-up@>=1.0.1 <2.0.0",
+          "resolved": "https://registry.npmjs.org/read-pkg-up/-/read-pkg-up-1.0.1.tgz"
         },
         "readable-stream": {
           "version": "2.2.2",
@@ -1987,6 +2267,16 @@
           "version": "1.1.1",
           "from": "request-promise-core@1.1.1",
           "resolved": "https://registry.npmjs.org/request-promise-core/-/request-promise-core-1.1.1.tgz"
+        },
+        "require-directory": {
+          "version": "2.1.1",
+          "from": "require-directory@>=2.1.1 <3.0.0",
+          "resolved": "https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz"
+        },
+        "require-main-filename": {
+          "version": "1.0.1",
+          "from": "require-main-filename@>=1.0.1 <2.0.0",
+          "resolved": "https://registry.npmjs.org/require-main-filename/-/require-main-filename-1.0.1.tgz"
         },
         "resolve": {
           "version": "1.1.7",
@@ -2123,6 +2413,21 @@
               "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz"
             }
           }
+        },
+        "spdx-correct": {
+          "version": "1.0.2",
+          "from": "spdx-correct@>=1.0.0 <1.1.0",
+          "resolved": "https://registry.npmjs.org/spdx-correct/-/spdx-correct-1.0.2.tgz"
+        },
+        "spdx-expression-parse": {
+          "version": "1.0.4",
+          "from": "spdx-expression-parse@>=1.0.0 <1.1.0",
+          "resolved": "https://registry.npmjs.org/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz"
+        },
+        "spdx-license-ids": {
+          "version": "1.2.2",
+          "from": "spdx-license-ids@>=1.0.2 <2.0.0",
+          "resolved": "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz"
         },
         "split": {
           "version": "0.3.3",
@@ -3017,6 +3322,11 @@
           "from": "strip-ansi@>=3.0.1 <4.0.0",
           "resolved": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz"
         },
+        "strip-bom": {
+          "version": "2.0.0",
+          "from": "strip-bom@>=2.0.0 <3.0.0",
+          "resolved": "https://registry.npmjs.org/strip-bom/-/strip-bom-2.0.0.tgz"
+        },
         "supports-color": {
           "version": "0.2.0",
           "from": "supports-color@>=0.2.0 <0.3.0",
@@ -3200,6 +3510,11 @@
           "from": "uuid-js@>=0.7.5 <0.8.0",
           "resolved": "https://registry.npmjs.org/uuid-js/-/uuid-js-0.7.5.tgz"
         },
+        "validate-npm-package-license": {
+          "version": "3.0.1",
+          "from": "validate-npm-package-license@>=3.0.1 <4.0.0",
+          "resolved": "https://registry.npmjs.org/validate-npm-package-license/-/validate-npm-package-license-3.0.1.tgz"
+        },
         "validate.js": {
           "version": "0.9.0",
           "from": "validate.js@>=0.9.0 <0.10.0",
@@ -3219,6 +3534,11 @@
           "version": "1.2.12",
           "from": "which@>=1.2.4 <2.0.0",
           "resolved": "https://registry.npmjs.org/which/-/which-1.2.12.tgz"
+        },
+        "which-module": {
+          "version": "1.0.0",
+          "from": "which-module@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/which-module/-/which-module-1.0.0.tgz"
         },
         "wide-align": {
           "version": "1.1.0",
@@ -3325,6 +3645,18 @@
           "version": "3.32.0",
           "from": "yargs@>=3.10.0 <4.0.0",
           "resolved": "https://registry.npmjs.org/yargs/-/yargs-3.32.0.tgz"
+        },
+        "yargs-parser": {
+          "version": "4.2.1",
+          "from": "yargs-parser@>=4.2.0 <5.0.0",
+          "resolved": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-4.2.1.tgz",
+          "dependencies": {
+            "camelcase": {
+              "version": "3.0.0",
+              "from": "camelcase@^3.0.0",
+              "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-3.0.0.tgz"
+            }
+          }
         }
       }
     }
