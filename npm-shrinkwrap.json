@@ -1,0 +1,18 @@
+{
+  "name": "appium-with-crosswalk-fix",
+  "version": "1.6.3",
+  "dependencies": {
+    "appium": {
+      "version": "1.6.3",
+      "from": "appium@>=1.6.3 <2.0.0",
+      "resolved": "https://registry.npmjs.org/appium/-/appium-1.6.3.tgz",
+      "dependencies": {
+        "appium-android-driver": {
+          "version": "1.17.1-crosswalk-fix",
+          "from": "appium-android-driver@>=1.0.0 <2.0.0",
+          "resolved": "https://github.com/blutter/appium-android-driver/archive/v1.17.1-crosswalk-fix.tar.gz"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "appium-with-crosswalk-fix",
+  "version": "1.6.3",
+  "description": "Appium node module with crosswalk fix",
+  "main": "index.js",
+  "dependencies": {
+    "appium": "^1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Tse",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blutter/appium-crosswalk-fix.git"
+  }
+}
