@@ -1,10 +1,10 @@
 {
   "name": "appium-with-crosswalk-fix",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Appium node module with crosswalk fix",
   "main": "index.js",
   "dependencies": {
-    "appium": "^1.6.3"
+    "appium": "^1.6.4"
   },
   "devDependencies": {},
   "scripts": {
