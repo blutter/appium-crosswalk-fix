@@ -1,6 +1,6 @@
 {
   "name": "appium-with-crosswalk-fix",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "dependencies": {
     "appium": {
       "version": "1.6.4",
